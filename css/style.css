@@ -7,6 +7,7 @@ body {
     background: rgb(15, 22, 36);
     color: rgb(242, 245, 247);
     cursor: default;
+    width: 100%;
 }
 h1, h2, h3, h4, h5, h6, button {
     font-family: "Space Grotesk", sans-serif;
@@ -78,8 +79,17 @@ h2{
     padding: 1% 15% 1%;
 }
 .title-p{
-    padding: 1% 15%;
+    padding: 1% 15% 1%;
     color: #ffffff;
+}
+.title-p p{
+        max-width: 800px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 300;
+    padding-bottom: 3.6rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0px;
 }
 .card-body h3{
     color: #747d8c;
@@ -223,6 +233,9 @@ border-style: none;
     width: 100%;
     font-size: 1.5rem;
   }
+  .card-body p{
+      padding: 0px 60px 0px;
+  }
   p{
       display: block;
     margin-block-start: 1em;
@@ -230,10 +243,11 @@ border-style: none;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     color: #ffffff;
-    padding: 0px 50px;
+    padding: 0px 0px;
     text-align: start;
       
   }
+
   .h3-stack{
       color: #ffffff;
       font-family: Optima, sans-serif;
@@ -378,7 +392,7 @@ border-style: none;
     max-width: 220px;
     width: 100%;
 }
-.footer-call h4{
+.list-group h4{
         font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -387,7 +401,7 @@ border-style: none;
     color: rgba(255, 255, 255, 0.4);
     margin-bottom: 16px;
 }
-.footer-call a{
+.list-group a{
     font-size: 18px;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.75);
@@ -431,3 +445,57 @@ border-style: none;
     margin:20px 10px
 }
   
+
+/* Media responsive */
+@media screen and (max-width: 768px) {
+    .container-fluid{
+        width: 100%;
+        max-width: 100%;
+    }
+#achievements {
+    padding: 24px 48px 0px;
+    flex-direction: column;
+}
+.achi-grid{
+    gap: 16px;
+    margin: 20px 0px 32px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+.grid-div{
+    height: 135px;
+    padding: 16px;
+}
+.footer-styles{
+    width: 100%;
+    padding: 32px 0px 16px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+ul{
+    margin: 1px;
+}
+.social-icons{
+    display: flex;
+    -webkit-box-pack: justify;
+    flex-direction: column;
+}
+.social-parg{
+    display: flex;
+    justify-content: start;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    padding: 0px 0px 0px;
+    margin: 0px 0px 0px;
+}
+.social-parg p{
+    padding: 0px 0px 0px;
+    margin: 0px 0px 0px;
+}
+.s-icons{
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-right: 16px;
+    flex-wrap: wrap;
+}
+}
