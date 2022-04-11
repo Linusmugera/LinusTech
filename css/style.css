@@ -297,6 +297,19 @@ border-style: none;
     color: #747d8c;
     padding: 1% 15% 1%;
 }
+.tech-p p{
+        max-width: 800px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5)
+}
+.icons{
+    color: rgb(19, 173, 199);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
+}
 
 .feature-box h3{
     color: #ffffff;
